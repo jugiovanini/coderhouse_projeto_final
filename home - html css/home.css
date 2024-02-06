@@ -1,0 +1,63 @@
+#destaque {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    background-color: #8E78D6;
+    overflow: hidden;
+}
+
+#destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#destaque div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#destaque div p {
+    font-size: 24px;
+}
+
+#destaque div p:last-child {
+    font-size: 16px;
+}
+
+/* Adicionando um gradiente para o texto */
+#destaque div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #8E78D6);
+    z-index: -1;
+}
+
+/* Efeito de transição no hover */
+#destaque:hover {
+    background-color: #6C569F;
+}
+
+#destaque:hover div::before {
+    background: linear-gradient(to bottom, transparent, #6C569F);
+}
+
+/* Adicionando uma animação suave */
+#destaque {
+    transition: background-color 0.3s ease;
+}
+
+#destaque div::before {
+    transition: background 0.3s ease;
+}
