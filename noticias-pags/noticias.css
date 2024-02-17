@@ -2,6 +2,11 @@
 
 iframe{
   width: 100%;
+  height: auto;
+}
+
+header{
+  height: 30px;
 }
 
 .primeira-dobra-imagem {
@@ -14,10 +19,10 @@ iframe{
   background-size: 1000px, 600px;
 }
 
-.bd-example {
+.card-capa {
   position: relative;
-  padding: 1rem;
-  margin: 1rem -15px 0;
+  padding: 0;
+  margin: 0;
   border: solid #f8f9fa;
   border-width: 0.2rem 0 0;
 }
